@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Cheer Chews {% endblock %}</title>
+
+    <!-- Stylesheets -->
+    <link href="{% static 'website/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'website/css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet" type="text/css">
+    <!--Color Switcher Mockup-->
+    <link href="{% static 'website/css/color-switcher-design.css' %}" rel="stylesheet">
+    <!--Color Themes-->
+    <link id="theme-color-file" href="{% static 'website/css/color-themes/default-theme.css' %}" rel="stylesheet">
+
+    {% block styles %}{% endblock %}
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="{% static 'website/js/respond.js' %}></script><![endif]-->
+
+    {% block inline_code %}{% endblock %}
+
+</head>
+
+
+<body>
+
+
+{% block content %}
+    {% block subheader %}{% endblock %}
+{% endblock %}
+
+<script src="{% static 'website/js/jquery.js' %}"></script>
+<script src="{% static 'website/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'website/js/mousewheel.js' %}"></script>
+
+<script src="{% static 'website/js/wow.min.js' %}"></script>
+<script src="{% static 'website/js/vivus.min.js' %}"></script>
+
+<script src="{% static 'website/js/script.js' %}"></script>
+<script src="{% static 'website/js/color-settings.js' %}"></script>
+
+{% block footer_scripts %}
+{% endblock %}
+
+</body>
+
+</html>

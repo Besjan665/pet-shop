@@ -1,0 +1,465 @@
+{% extends "main.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="main-wrapper pet about">
+
+        <div id="preloading"></div>
+
+        <section class="featured">
+
+            {% include './partials/header.html' %}
+
+            {% block subheader %}
+
+                <div class="crumb">
+                    <div class="container">
+                        <h1>
+                            About <span class="wow pulse" data-wow-delay="1s"> Cheer Chews
+                             </span>
+                        </h1>
+                        <div class="bg_tran">
+                            Cheer Chews
+                        </div>
+                        <p>
+                            <a href="/" title="Home">HOME</a> || <span>ABOUT</span>
+                        </p>
+                    </div>
+                </div>
+
+            {% endblock %}
+
+        </section>
+
+        <section class="about_us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 odr_change">
+                        <div class="image">
+                            <div class="an_image an_image_hz_ps_center an_image_vt_ps_bottom an_image_anime_delay_300 an_image_anime_duration_1500 an_image_anime_style_ease_out_sine"
+                                 data-speed="1.2">
+                                <div class="an_image_image" data-speed="1.2">
+                                    <div class="pt_image"><span><img src="{% static 'images/pet.png' %}"
+                                                                     title="Pet" alt="Image of Pet"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="heading text-center">
+                            <p class="wow fadeInUp"><span class="purple"><i class="fas fa-paw"></i> </span><span
+                                    class="orange"><i class="fas fa-paw"></i> </span><span class="purple"><i
+                                    class="fas fa-paw"></i> </span></p>
+                            <h2 class="wow fadeInDown">Welcome to <span class="wow pulse" data-wow-delay="1s">
+                                    Cheer Chews</span></h2>
+                        </div>
+                        <div class="text">
+                            <p>
+                                “The year is 2018. Xhoku, our cocker is constantly chewing on any shoe he can find. He enjoyed chewing and we liked our shoes, so we set out to replace them with something else he could chew on.
+                            </p>
+                            <p>
+                                Unfortunately, we couldn’t find any organic alternatives for him and being in the by-products industry, we knew we could provide Xhoku with healthy and organic products instead of plastic toys.”
+                            </p>
+                            <ul>
+                                <li><i class="orange fas fa-paw pr-2"></i> How the company was born
+                                </li>
+                                <li><i class="orange fas fa-paw pr-2"></i>Who it cooperates with
+                                </li>
+                                <li><i class="orange fas fa-paw pr-2"></i>Why it is good for the Albanian economy and environment
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="faq">
+            <div class="container">
+                <div class="heading text-center">
+                    <p class="wow fadeInUp"><span class="purple"><i class="fas fa-paw"></i> </span><span
+                            class="orange"><i class="fas fa-paw"></i> </span><span class="purple"><i
+                            class="fas fa-paw"></i> </span></p>
+                    <h2>Asked <span class="wow pulse" data-wow-delay="1s"> Questions </span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="content">
+                            <div class="accordion" id="accordionExample">
+                                <div>
+                                    <div class="coll mb-3">
+                                        <div class="accord" id="headingOne">
+                                            <div class="card-header" data-toggle="collapse"
+                                                 data-parent="#accordionExample" href="#collapseOne">
+                                                <a class="card-title">Our Mission</a>
+                                                <span><i class="fas fa-paw"></i></span>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+                                            <div>
+                                                <p>“To help create a healthier lifestyle for pet-owners and their pets”</p>
+                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="coll mb-3">
+                                        <div class="accord" id="headingTwo">
+                                            <div class="card-header collapsed" data-toggle="collapse"
+                                                 data-parent="#accordionExample" href="#collapseTwo">
+                                                <a class="card-title">Our Vision</a>
+                                                <span><i class="fas fa-paw"></i></span>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                                            <div>
+                                                <p>“To pioneer new business models which positively impact the world by creating added value out of waste and become a major influencing part of the shift towards a more sustainable and healthier lifestyle.”</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                  <!--  <div class="coll mb-3">
+                                        <div class="accord" id="headingThree">
+                                            <div class="card-header collapsed" data-toggle="collapse"
+                                                 data-parent="#accordionExample" href="#collapseThree">
+                                                <a class="card-title">Values</a>
+                                                <span><i class="fas fa-paw"></i></span>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                                    ea
+                                                    commodo consequat. Duis aute irure dolor in reprehenderit in
+                                                    voluptate
+                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                    mollit anim id est laborum.
+
+                                                    <br>
+
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                                    ea
+                                                    commodo consequat. Duis aute irure dolor in reprehenderit in
+                                                    voluptate
+                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                    mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="coll mb-3">
+                                        <div class="accord" id="headingFour">
+                                            <div class="card-header collapsed" data-toggle="collapse"
+                                                 data-parent="#accordionExample" href="#collapseFour">
+                                                <a class="card-title">New Anouncement</a>
+                                                <span><i class="fas fa-paw"></i></span>
+
+                                            </div>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                                            <div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                                    ea
+                                                    commodo consequat. Duis aute irure dolor in reprehenderit in
+                                                    voluptate
+                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                    mollit anim id est laborum.
+
+                                                    <br>
+
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                                    ea
+                                                    commodo consequat. Duis aute irure dolor in reprehenderit in
+                                                    voluptate
+                                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                    mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="steps">
+            <div class="container">
+                <div class="heading text-center">
+                    <p class="wow fadeInUp"><span class="purple"><i class="fas fa-paw"></i> </span><span
+                            class="orange"><i class="fas fa-paw"></i> </span><span class="purple">
+                            <i class="fas fa-paw"></i> </span></p>
+                    <h2 class="wow fadeInDown">We Love to <span class="wow pulse" data-wow-delay="1s"> Serve
+                            You</span></h2>
+                </div>
+                <div class="services">
+                    <div class="cards">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card orange wow fadeInLeft">
+                                    <div class="icon">
+                                        <div class="svg-icon" id="svg-1"
+                                             data-svg-icon="{% static 'website/images/home_5/svg/pet_care.svg' %}">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Pet Care</h5>
+                                        <p>
+                                            If you're looking for loving and convenient pet care, look no further than Cheer Chews
+
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card yellow wow fadeInUp">
+                                    <div class="icon">
+                                        <div class="svg-icon" id="svg-2"
+                                             data-svg-icon="{% static 'website/images/home_5/svg/pet_grooming.svg' %}">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Pet Food</h5>
+                                        <p>
+                                            Cheer & Chews's pet food is beloved by dogs and cats alike and recommended by the veterinarian 
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card purple wow fadeInRight">
+                                    <div class="icon">
+                                        <div class="svg-icon" id="svg-3"
+                                             data-svg-icon="{% static 'website/images/home_5/svg/pet_support.svg' %}">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Support</h5>
+                                        <p>
+                                            Cheer Chews provides veterinarian-written and reviewed articles and guides that make caring for your pets easier
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="new_custom">
+            <div class="container">
+                <div class="heading text-center">
+                    <p class="wow fadeInUp"><span class="purple"><i class="fas fa-paw"></i> </span><span
+                            class="orange"><i class="fas fa-paw"></i> </span><span class="purple"><i
+                            class="fas fa-paw"></i> </span></p>
+                    <h2 class="wow fadeInDown">Read <span class="wow pulse" data-wow-delay="1s">
+                            Testimonials</span></h2>
+                </div>
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="testimon">
+                            <div class="image">
+                                <img src="{% static 'images/megi.jpg' %}" alt="image of client"
+                                     title="client"
+                                     class="img-fluid customer">
+                                <img src="{% static 'images/megi.jpg' %}" alt="Image of Dot"
+                                     title="Dot"
+                                     class="img-fluid dots">
+                            </div>
+                            <div class="content">
+                                <h3 class="wow fadeInDown">Mary</h3>
+                                <span class="open">❝</span>
+                                <p class="wow fadeInUp">
+                                    I appreciate the quality of your products. Spajk, my cat, loves it.  
+                                       Thank you for them. 
+                                </p>
+                                <span class="close">❞</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimon">
+                            <div class="image">
+                                <img src="{% static 'images/besi.jpg' %}" alt="image of client"
+                                     title="client"
+                                     class="img-fluid customer">
+                                <img src="{% static 'images/besi.jpg' %}" alt="Image of Dot"
+                                     title="Dot"
+                                     class="img-fluid dots">
+                            </div>
+                            <div class="content">
+                                <h3>Mark</h3>
+                                <span class="open">❝</span>
+                                <p>
+                                    Clean bill of health from the vet every single time and an incredible amount of energy. The product is amazing
+                                </p>
+                                <span class="close">❞</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimon">
+                            <div class="image">
+                                <img src="{% static 'images/edona.jpg' %}" alt="image of client"
+                                     title="client"
+                                     class="img-fluid customer">
+                                <img src="{% static 'images/edona.jpg' %}" alt="Image of Dot"
+                                     title="Dot"
+                                     class="img-fluid dots">
+                            </div>
+                            <div class="content">
+                                <h3>Jane</h3>
+                                <span class="open">❝</span>
+                                <p>
+                                    Love your product!! Thank you for helping make healthy food for my fur babies!! They gobble it up!!
+                                </p>
+                                <span class="close">❞</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimon">
+                            <div class="image">
+                                <img src="{% static 'images/joana.jpg' %}" alt="image of client"
+                                     title="client"
+                                     class="img-fluid customer">
+                                <img src="{% static 'images/joana.jpg' %}" alt="Image of Dot"
+                                     title="Dot"
+                                     class="img-fluid dots">
+                            </div>
+                            <div class="content">
+                                <h3>Mia</h3>
+                                <span class="open">❝</span>
+                                <p>
+                                    Thank you for offering this wonderful all natural premix for the health of our kitty companions!
+                                </p>
+                                <span class="close">❞</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="an_image an_image_hz_ps_right an_image_vt_ps_middle an_image_anime_delay_300 an_image_anime_duration_1500 an_image_anime_style_ease_out_sine"
+                     data-speed="1.2">
+                    <div class="an_image_image" data-speed="1.2">
+                        <div class="pt_image">
+                            <span>
+                                <img src="{% static 'website/images/home_5/frisbee.png' %}" title="Frisbee"
+                                     alt="Image of Frisbee"
+                                     class="frisbee">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <div class="heading text-center">
+                    <p class="wow fadeInUp"><span class="purple"><i class="fas fa-paw"></i> </span><span
+                            class="orange"><i class="fas fa-paw"></i> </span><span class="purple"><i
+                            class="fas fa-paw"></i> </span></p>
+                    <h2 class="wow fadeInDown">Our Team <span class="wow pulse" data-wow-delay="1s">
+                            Members</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="member">
+                            <div class="image">
+                                <img src="{% static 'images/founder.jpg' %}" alt="image of client"
+                                     title=""
+                                     class="img-fluid customer">
+                            </div>
+                            <div class="content">
+                                <h4 class="wow fadeInDown">Mr.Founder</h4>
+                                <p class="wow fadeInUp">
+                                    FOUNDER
+                                </p>
+                                <p>
+                                    <a href="#" title="facebook"><i class="fas fa-facebook"></i></a>
+                                    <a href="#" title="twitter"><i class="fas fa-twitter"></i></a>
+                                    <a href="#" title="instagram"><i class="fas fa-instagram"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="member">
+                            <div class="image">
+                                <img src="{% static 'images/manager.jpg' %}" alt="image of client"
+                                     title=""
+                                     class="img-fluid customer">
+                            </div>
+                            <div class="content">
+                                <h4 class="wow fadeInDown">Mrs.Manager</h4>
+                                <p class="wow fadeInUp">
+                                    Manager
+                                </p>
+                                <p>
+                                    <a href="#" title="facebook"><i class="fas fa-facebook"></i></a>
+                                    <a href="#" title="instagram"><i class="fas fa-instagram"></i></a>
+                                    <a href="#" title="twitter"><i class="fas fa-twitter"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="member">
+                            <div class="image">
+                                <img src="{% static 'images/professor.jpg' %}" alt="image of client"
+                                     title=""
+                                     class="img-fluid customer">
+                            </div>
+                            <div class="content">
+                                <h4 class="wow fadeInDown">Mr.Professor</h4>
+                                <p class="wow fadeInUp">
+                                    Professor
+                                </p>
+                                <p>
+                                    <a href="#" title="facebook"><i class="fas fa-facebook"></i></a>
+                                    <a href="#" title="instagram"><i class="fas fa-instagram"></i></a>
+                                    <a href="#" title="twitter"><i class="fas fa-twitter"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include './partials/footer.html' %}
+
+    </div>
+{% endblock %}

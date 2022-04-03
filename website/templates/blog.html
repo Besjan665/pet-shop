@@ -1,0 +1,396 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Cheer Chews</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'website/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'website/css/responsive.css' %}" rel="stylesheet">
+    <!--Color Switcher Mockup-->
+    <link href="{% static 'website/css/color-switcher-design.css' %}" rel="stylesheet">
+    <!--Color Themes-->
+    <link id="theme-color-file" href="{% static 'website/css/color-themes/default-theme.css' %}" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    <!-- Main Header-->
+    <header class="main-header">
+        <!--Header Top-->
+        <div class="header-top">
+            <div class="auto-container">
+                <div class="top-inner">
+                    <div class="clearfix">
+                        <div class="top-left">
+                            <ul class="clearfix">
+                                <li><span class="icon flaticon-map-marker"></span>Lezhe,Albania</li>
+                                <li><a href="tel:00355696082228"><span
+                                        class="icon flaticon-telephone-handle-silhouette">0696082228</span></a></li>
+                                <li><a href="mailto:albafish@yahoo.com"><span class="icon fa fa-envelope"></span>albafish@yahoo.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-right clearfix">
+
+                            <!--social-icon-->
+                            <div class="social-icon">
+                                <ul class="clearfix">
+                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header-Upper-->
+        <div class="header-upper">
+            <div class="auto-container clearfix">
+                <div class="pull-left logo-outer">
+                    <div class="logo"><a href="/"><img src="{% static 'images/logo.png' %}" alt="logo of image" title=""></a></div>
+                </div>
+                <div class="pull-right upper-right clearfix">
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target=".navbar-collapse">
+                                    <span><i class="fa fa-bars"></i></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="{% if request.path == '/' %}current{% endif %} dropdown"><a href="/">Home</a>
+
+                                    </li>
+                                    <li class="{% if request.path == '/about.html' %}current{% endif %} dropdown"><a href="about.html">About</a>
+
+                                    </li>
+
+
+                                    <li class="{% if request.path == '/shop.html' %}current{% endif %} dropdown"><a href="shop.html">Shop</a>
+                                        <ul class="dropdown-menu">
+
+                                            <li><a href="cart.html">Cart</a></li>
+                                            <li><a href="checkout.html">Check Out</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="{% if request.path == '/blog.html' %}current{% endif %} dropdown"><a href="blog.html">Blog</a>
+
+                                    </li>
+                                    <li class="{% if request.path == '/contact.html' %}current{% endif %} dropdown"><a href="contact.html">Contact</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container clearfix">
+
+                <!--Logo-->
+                <div class="logo pull-left">
+                    <a href="/" class="img-responsive"><img src="{% static 'images/logo.png' %}" alt="logo of image" title=""></a>
+                </div>
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="{% if request.path == '/' %}current{% endif %} dropdown"><a href="home.html">Home</a>
+
+                                </li>
+                                <li class="{% if request.path == '/about.html' %}current{% endif %} dropdown"><a href="about.html">About</a>
+
+                                </li>
+
+
+                                <li class="{% if request.path == '/shop.html' %}current{% endif %} dropdown"><a href="shop.html">Shop</a>
+                                    <ul class="dropdown-menu">
+
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="checkout.html">Check Out</a></li>
+
+                                    </ul>
+
+                                </li>
+
+                                <li class="{% if request.path == '/blog.html' %}current{% endif %} dropdown"><a href="blog.html">Blog</a>
+
+                                </li>
+                                <li class="{% if request.path == '/contact.html' %}current{% endif %} dropdown"><a href="contact.html">Contact</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    </header>
+    <!--End Main Header -->
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'website/images/background/7.jpg' %})">
+        <div class="auto-container">
+            <div class="clearfix">
+                <div class="pull-left">
+                    <h1>Our News</h1>
+                    }
+                </div>
+                <div class="pull-right">
+                    <ul class="page-breadcrumb">
+                        <li><a href="/">Home</a></li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+    <!--Blog Page Section-->
+    <section class="blog-page-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--News Block-->
+                <div class="news-block-two col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="blog-single.html"><img src="{% static 'images/news-4.jpg' %}"
+                                                            alt=""/></a>
+                            <div class="post-date">30 <span>March</span></div>
+                        </div>
+                        <div class="lower-content">
+
+                            <h3><a href="https://www.justrightpetfood.com/blog/how-much-water-does-a-dog-need">Calculating How Much Water Your Dog Should Drink</a></h3>
+                            <div class="text">There are several factors that dictate how much water a dog should drink per day, including the dog’s activity level, breed size, and even what kind of food they eats. For example, wet dog food contains more water than dry dog food. One kind of food isn’t necessarily better than the other – dogs who eat dry food will just get more of their hydration from their water bowl than their food.
+
+A general guideline is that dogs need 1 ounce of water per 1 pound of body weight . 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--News Block-->
+                <div class="news-block-two col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="blog-single.html"><img src="{% static 'images/news-5.jpg' %}"
+                                                            alt=""/></a>
+                            <div class="post-date">10 <span>April</span></div>
+                        </div>
+                        <div class="lower-content">
+
+                            <h3><a href="https://www.justrightpetfood.com/blog/how-dogs-taste-food">How do dogs taste food?</a></h3>
+                            <div class="text">If you went head-to-head in a taste test against your dog, you would win! Humans, on average, have 9,000 taste buds on their tongues, while the average dog only has about 1,700. But that doesn't mean that dogs don't have a sense of taste or don't have taste preferences. In fact, dogs can taste sweet, sour, salty, spicy, and bitter .
+
+You may be surprised to learn that in addition to those five tastes, dog’s taste buds 
+can also taste water.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--News Block-->
+                <div class="news-block-two col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="blog-single.html"><img src="{% static 'images/news-6.jpg' %}"
+                                                            alt=""/></a>
+                            <div class="post-date">2 <span>May</span></div>
+                        </div>
+                        <div class="lower-content">
+
+                            <h3><a href="https://www.justrightpetfood.com/blog/dog-eating-cat-food">Why Your Dog Eats Cat Food (And How to Stop It)</a></h3>
+                            <div class="text">Start by making bowls of food distinguishable.
+To be fair to your dog, it may be hard to tell the difference between a bowl full of kibble that they’re supposed to eat, and a bowl full of kibble that’s off-limits. Help your dog out by making the bowls of kibble look very different from each other. Try different bowl sizes and colors, and if you have a placemat under your pets’ bowls, make sure they’re different too.
+
+Teach your dog the “Leave It” command.
+
+Remove the opportunity for your dog to eat cat food.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--News Block-->
+                <div class="news-block-two col-md-6 col-sm-12 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="blog-single.html"><img src="   {% static 'images/news-7.jpg' %}"
+                                                            alt=""/></a>
+                            <div class="post-date">3 <span>May</span></div>
+                        </div>
+                        <div class="lower-content">
+
+                            <h3><a href="https://www.justrightpetfood.com/blog/brush-dogs-teeth">How to wash your pet's teeth?</a></h3>
+                            <div class="text">Let your dog taste the toothpaste.
+
+ Lift your dog’s or cats's lip with your fingers. Let your dog get used to the feeling of your fingers in or around their mouth. It may take a few days of praise and patience before your dog is fully comfortable with you touching their mouth and teeth.
+Gently brush your dog’s teeth. Using a soft toothbrush, gently brush the outside of your dog’s teeth with circular motions.
+
+Reward your dog! Make sure your dog knows that brushing their teeth is a good thing.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+               
+                    </div>
+                </div>
+            </div>
+            <!--Styled Pagination-->
+
+            <!--End Styled Pagination-->
+        </div>
+    </section>
+    <!--End Blog Page Section-->
+    <!--Main Footer-->
+    <footer class="main-footer style-two">
+        <div class="auto-container">
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+                    <!--big column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-7 col-sm-6 col-xs-12">
+                                <div class="footer-widget logo-widget">
+                                    <div class="logo">
+                                        <a href="/"><img src="{% static 'images/logo.png' %}" alt=""/></a>
+                                    </div>
+                                    <div class="text">Cheer Chews offers an array of dog food products, specially formulated to meet your dog’s unique needs. Whether you have a puppy, adult or senior dog, you want to avoid grains or you prefer a natural dog food, we have something for everyone and every dog. Explore them all here.
+                                    </div>
+                                    <ul class="social-icon-two">
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-5 col-sm-6 col-xs-12">
+                                <div class="footer-widget links-widget">
+                                    <h2>Web Links</h2>
+                                    <ul class="links">
+                                        <li><a href="/">Home Page</a></li>
+                                        <li><a href="/about.html">About us</a></li>
+                                        <li><a href="/shop.html">Shop</a></li>
+                                        <li><a href="/blog.html">Blog</a></li>
+                                        <li><a href="/contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--big column-->
+                    <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="row clearfix">
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget posts-widget">
+                                    <h2>Recent Posts</h2>
+                                    <!--Widget Post-->
+                                    <article class="widget-post">
+                                        <figure class="post-thumb"><a href="blog-single.html"><img
+                                                src="{% static 'images/post-thumb-1.jpg' %}" alt=""></a></figure>
+                                        <div class="text"><a href="blog-single.html">We have best Pet Food</a></div>
+                                        <div class="post-info">March 15, 2021</div>
+                                    </article>
+                                    <!--Widget Post-->
+                                    <article class="widget-post">
+                                        <figure class="post-thumb"><a href="blog-single.html"><img
+                                                src="{% static 'images/post-thumb-2.jpg' %}" alt=""></a></figure>
+                                        <div class="text"><a href="blog-single.html">We have best Pet Food</a></div>
+                                        <div class="post-info">March 15, 2021</div>
+                                    </article>
+                                </div>
+                            </div>
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                <div class="footer-widget info-widget">
+                                    <h2>Get In Touch</h2>
+                                    <ul>
+                                        <li><span class="icon fa fa-map-marker"></span>Lezhe,Albania</li><br>
+                                        <li><a href="tel:00355696082228"><span class="icon fa fa-phone"></span>0696082228</a></li><br>
+                                        <li><a href="mailto:albafish@yahoo.com"><span class="icon fa fa-envelope"></span>albafish@yahoo.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">Copyrights 2021 <span>Team 4 Uni Tirana(FE)<span> • All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <!--End Main Footer-->
+</div>
+<!--End pagewrapper-->
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon flaticon-pawprint-1"></span></div>
+<!-- Color Palate / Color Switcher -->
+
+<script src=" {% static 'website/js/jquery.js' %}"></script>
+<script src="{% static 'website/js/popper.js' %}"></script>
+<script src=" {% static 'website/js/bootstrap.js' %}"></script>
+<script src="{% static 'website/js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'website/js/owl.js' %}"></script>
+<script src="{% static 'website/js/jquery-ui.js' %}"></script>
+<script src=" {% static 'website/js/appear.js' %}"></script>
+<script src=" {% static 'website/js/wow.js' %}"></script>
+<script src="{% static 'website/js/gallery.js' %}"></script>
+<script src=" {% static 'website/js/script.js' %}"></script>
+<script src="{% static 'website/js/color-settings.js' %}"></script>
+</body>
+
+</html>

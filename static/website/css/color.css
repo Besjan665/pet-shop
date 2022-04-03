@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+a,
+.theme_color,
+.btn-style-one:hover,
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li.current > a,
+.services-block .inner-box h3 a:hover,
+.main-footer .list li a:hover,
+.social-icon-two li a:hover,
+.page-title .page-breadcrumb li a,
+.list-style-two li,
+.error-section h1,
+.cat-list li a:hover,
+.sidebar .popular-posts .post a:hover,
+.news-block-three .inner-box .lower-content .post-date,
+.news-block-three .inner-box .lower-content h3 a:hover,
+.list-style-three li:before,
+.time-counter .time-countdown .counter-column,
+.main-header .info-box .icon-box,
+.time-counter .time-countdown .counter-column .count,
+.services-block-four .inner-box .lower-box h3 a:hover,
+.main-menu .navigation > li.current-menu-item > a,
+.testimonial-block-two .inner-box .image-box .quote-icon,
+.main-header .sticky-header .main-menu .navigation > li:hover > a,
+.main-header .sticky-header .main-menu .navigation > li.current > a,
+.blog-single .inner-box .lower-content .post-date,
+.main-header .sticky-header .main-menu .navigation > li.current-menu-item > a{
+	color:#39CCCC;
+}
+
+/*Background Color*/
+.btn-style-one,
+.scroll-to-top,
+.page-title h1:after,
+.btn-style-three:hover,
+.main-slider .tparrows.gyges:hover,
+.main-menu .navigation > li > a:after,
+.btn-style-one:hover:before,
+.main-menu .navigation > li > ul > li:hover > a,
+.main-menu .navigation > li > ul > li > ul > li > a:hover,
+.fluid-section-two .outer-container,
+.main-footer .footer-widget h2:after,
+.year-block .inner-box .year,
+.list-style-one li:before,
+.blog-cat li.active a, .blog-cat li a:hover,
+.case-info-tabs .case-tabs .tab-btns .tab-btn:hover,
+.case-info-tabs .case-tabs .tab-btns .tab-btn.active-btn,
+.comming-soon .emailed-form .form-group input[type="submit"],
+.comming-soon .emailed-form button{
+	background-color:#39CCCC;
+}
+
+
+/*Border Color*/
+
+.btn-style-one,
+.scroll-to-top,
+.btn-style-three:hover,
+.blog-cat li,
+.social-icon-two li a:hover,
+.main-header .search-box-outer .dropdown-menu,
+.main-header .search-panel input:focus,
+.main-header .search-panel select:focus,
+.time-counter .time-countdown .counter-column,
+.main-header .header-lower .search-box-outer .dropdown-menu,
+.main-header .header-lower .search-panel input:focus,
+.main-header .header-lower .search-panel select:focus,
+.faq-search-box .form-group input:focus,
+.faq-form-section .form-group input[type="text"]:focus,
+.faq-form-section .form-group input[type="email"]:focus,
+.faq-form-section .form-group textarea:focus,
+.comment-form .form-group input[type="text"]:focus,
+.comment-form .form-group input[type="email"]:focus,
+.comment-form .form-group textarea:focus,
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus{
+	border-color:#39CCCC;
+}
+
+/*RGBA Color Light*/
+
+.gallery-item .overlay-box,
+.team-block .inner-box .image .overlay-box{
+	background-color:rgba(57,204,204,0.80);
+}
+
+/*RGBA Color Dark*/
+
+@media only screen and (max-width: 767px){
+	
+	.main-menu .navbar-header .navbar-toggle{
+		border-color:#39CCCC;
+	}
+	
+	.main-menu .navbar-header .navbar-toggle,
+	.main-menu .navbar-collapse > .navigation,
+	.main-menu .navbar-collapse > .navigation > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > a:hover,
+	.main-menu .navbar-collapse > .navigation > li > a:active,
+	.main-menu .navbar-collapse > .navigation > li > a:focus,
+	.main-menu .navbar-collapse > .navigation > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li.current > a,
+	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a,
+	.header-style-two.inner-header .main-menu .navigation > li > a{
+		background-color:#39CCCC;
+	}
+	
+}

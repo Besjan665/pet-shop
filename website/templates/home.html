@@ -1,0 +1,405 @@
+{% extends "main.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="main-wrapper pet">
+
+        <div id="preloading"></div>
+
+        <section class="featured">
+
+            {% include './partials/header.html' %}
+
+            {% block subheader %}
+
+                <div class="slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-12 col-sm-12">
+                                <div class="text">
+                                    <div class="heading">
+                                        <h1>
+                                            Enjoy healthy food for your pets <span class="wow pulse" data-wow-delay="1s"> Cheer Chews</span>
+                                        </h1>
+                                    </div>
+                                    <p class="wow fadeInDown">
+                                        Cheer Chews,the paradise for a pet with different plates full of
+                                        proteins,vitamins
+                                        and
+                                        energy.We are the best Petfood's producers in Balkan area.</p>
+                                    <div class="button wow fadeInUp">
+                                        <a href="/contact.html" class="btn main" title="contact">Contact Us <i class="fas fa-paw"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12">
+                                <div class="image">
+                                    <div class="an_image an_image_hz_ps_right_end an_image_vt_ps_top an_image_anime_delay_300 an_image_anime_duration_1500 an_image_anime_style_ease_out_sine"
+                                         data-speed="1.2">
+                                        <div class="an_image_image" data-speed="1.2">
+                                            <div class="pt_image"><span><img
+                                                    src="{% static 'images/pet.png' %}"
+                                                    title="Pet"
+                                                    alt="Image of Pet"> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            {% endblock %}
+        </section>
+
+        <section class="description">
+            <div class="context">
+                <div class="container">
+                    <div class="heading text-center">
+                        <p class="wow fadeInUp"><span class="purple"><i class="fas fa-paw"></i> </span><span
+                                class="orange"><i class="fas fa-paw"></i> </span><span class="purple"><i
+                                class="fas fa-paw"></i> </span></p>
+                        <h2 class="wow fadeInDown">We can keep them <span class="wow pulse" data-wow-delay="1s">
+                                happy</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="content">
+                                <div class="image text-center wow fadeInLeft">
+                                    <img src="{% static 'images/hogi.jpg' %}" alt="image of product" width="175px" height="179px" 
+                                         title="product"
+                                         class="img-fluid rounded-circle">
+                                    <h4>Hog Twisted Bladder</h4>
+                                    <p>
+                                        Hog Twisted Bladder is the most economical type of commercial dog food, and this is the
+                                        reason that many owners choose it for their
+                                        dog. It also lasts for a long time and does not need to be refrigerated
+                                    </p>
+                                </div>
+                                <div class="image text-center wow fadeInLeft">
+                                    <img src="{% static 'images/pigi.jpg' %}" alt="image of product"
+                                         title="product"
+                                         class="img-fluid rounded-circle">
+                                    <h4>Pig Ears</h4>
+                                    <p>
+                                        Most dogs love canned, or wet, food; it has a long shelf life and is easy to
+                                        find at any supermarket, but it can be
+                                        expensive. For some owners, it’s definitely worth the expense, but not every
+                                        brand
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="dog text-center">
+                                <img src="{% static 'images/pet2.png' %}" alt="image of pet"
+                                     title="pet"
+                                     class="at_upDown">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="context">
+                                <div class="image text-center wow fadeInRight">
+                                    <img src=" {% static 'images/porki.jpg' %}" alt="image of product"
+                                         title="product"
+                                         class="img-fluid rounded-circle">
+                                    <h4>Pork Nose</h4>
+                                    <p>
+                                        Commercial dog foods shaped like pork chops, burgers, or other meaty foods are
+                                        called semi-moist foods. These kinds of
+                                        foods are the least nutritional of all dog foods
+                                    </p>
+                                </div>
+                                <div class="image text-center wow fadeInRight">
+                                    <img src="{% static 'images/cowi.jpg' %}" alt="image of product"
+                                         title="product"
+                                         class="img-fluid rounded-circle">
+                                    <h4>Cow Head Skin</h4>
+                                    <p>
+                                        Some dog owners value the ability to be in complete control of their dog’s diet.
+                                        A home-cooked diet allows the owner to
+                                        know for certain exactly what is in everything her dog eats
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="new_custom">
+            <div class="container">
+                <div class="heading text-center">
+                    <p class="wow fadeInUp"><span class="purple"><i class="fas fa-paw"></i> </span><span
+                            class="orange"><i class="fas fa-paw"></i> </span><span class="purple"><i
+                            class="fas fa-paw"></i> </span></p>
+                    <h2 class="wow fadeInDown">See What Our <span class="wow pulse" data-wow-delay="1s"> Client
+                            Say</span></h2>
+                </div>
+                <div class="owl-carousel">
+                    <div class="item">
+                        <div class="testimon">
+                            <div class="image">
+                                <img src="{% static 'images/megi.jpg' %}" alt="image of client"
+                                     title="client"
+                                     class="img-fluid customer">
+                                <img src="{% static 'images/megi.jpg' %}" alt="Image of Dot"
+                                     title="Dot"
+                                     class="img-fluid dots">
+                            </div>
+                            <div class="content">
+                                <h3 class="wow fadeInDown">Mary</h3>
+                                <span class="open">❝</span>
+                                <p class="wow fadeInUp">
+                                  I appreciate the quality of your products. Spajk, my cat, loves it.  
+                                       Thank you for them.  
+                                </p>
+                                <span class="close">❞</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimon">
+                            <div class="image">
+                                <img src="{% static 'images/besi.jpg' %}" alt="image of client"
+                                     title="client"
+                                     class="img-fluid customer">
+                                <img src="{% static 'images/besi.jpg' %}" alt="Image of Dot"
+                                     title="Dot"
+                                     class="img-fluid dots">
+                            </div>
+                            <div class="content">
+                                <h3>John</h3>
+                                <span class="open">❝</span>
+                                <p>
+                                    Clean bill of health from the vet every single time and an incredible amount of energy. The product is amazing
+                                </p>
+                                <span class="close">❞</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimon">
+                            <div class="image">
+                                <img src="{% static 'images/joana.jpg' %}" alt="image of client"
+                                     title="client"
+                                     class="img-fluid customer">
+                                <img src="{% static 'images/joana.jpg' %}" alt="Image of Dot"
+                                     title="Dot"
+                                     class="img-fluid dots">
+                            </div>
+                            <div class="content">
+                                <h3>Mia</h3>
+                                <span class="open">❝</span>
+                                <p>
+                                    Thank you for offering this wonderful all natural premix for the health of our kitty companions!
+                                </p>
+                                <span class="close">❞</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimon">
+                            <div class="image">
+                                <img src="{% static 'images/edona.jpg' %}" alt="image of client"
+                                     title="client"
+                                     class="img-fluid customer">
+                                <img src="{% static 'images/edona.jpg' %}" alt="Image of Dot"
+                                     title="Dot"
+                                     class="img-fluid dots">
+                            </div>
+                            <div class="content">
+                                <h3>Jane</h3>
+                                <span class="open">❝</span>
+                                <p>
+                                    Love your product!! Thank you for helping make healthy food for my fur babies!! They gobble it up!!
+                                   
+                                </p>
+                                <span class="close">❞</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="an_image an_image_hz_ps_right an_image_vt_ps_middle an_image_anime_delay_300 an_image_anime_duration_1500 an_image_anime_style_ease_out_sine"
+                     data-speed="1.2">
+                    <div class="an_image_image" data-speed="1.2">
+                        <div class="pt_image">
+                            <span>
+                                <img src="{% static 'website/images/home_5/frisbee.png' %}" title="Frisbee"
+                                     alt="Image of Frisbee"
+                                     class="frisbee">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="method">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="text">
+                            <div class="counter-portion">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="box borded">
+                                            <div class="icon">
+                                                <span class="icon flaticon-easter-bunny"></span>
+                                            </div>
+                                            <div class="num">
+                                                <span class="counting-value">10</span>
+                                                <span>+</span>
+                                            </div>
+                                            <div class="description">PET FOOD</div>
+                                        </div>
+                                        <div class="box happy">
+                                            <div class="icon">
+                                                <span class="icon flaticon-brush"></span>
+                                            </div>
+                                            <div class="num">
+                                                <span class="counting-value">100</span>
+                                                <span>+</span>
+                                            </div>
+                                            <div class="description">HAPPY CLIENTS</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="box project">
+                                            <div class="icon">
+                                                <span class="icon flaticon-money-bag"></span>
+                                            </div>
+                                            <div class="num">
+                                                <span class="counting-value">10</span>
+                                                <span>+</span>
+                                            </div>
+                                            <div class="description">SAVINGS</div>
+                                        </div>
+                                        <div class="box event">
+                                            <div class="icon">
+                                                <span class="icon flaticon-award"></span>
+                                            </div>
+                                            <div class="num">
+                                                <span class="counting-value">10</span>
+                                                <span>+</span>
+                                            </div>
+                                            <div class="description">EVENT DONE</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="house floated">
+                            <div class="an_image an_image_hz_ps_left an_image_vt_ps_middle an_image_anime_delay_300 an_image_anime_duration_1500 an_image_anime_style_ease_out_sine"
+                                 data-speed="1.2">
+                                <div class="an_image_image" data-speed="1.2">
+                                    <div class="pt_image">
+                                        <span>
+                                            <img src="{% static 'images/pet3.png' %}" title="Pet"
+                                                 alt="Image of Pet"
+                                                 class="ball">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="images">
+                                    <div class="icon">
+                                        <div class="svg-icon back" id="svg-9"
+                                             data-svg-icon="% static 'website/images/home_5/svg/blob (3).svg' %}">
+                                        </div>
+                                    </div>
+                                    <img src="{% static 'images/pet4.png' %}" alt="Image of Animal"
+                                         title="Animal"
+                                         class="img-fluid" id="animal">
+                                    <img src="{% static 'website/images/home_5/dots.png' %}" alt="" class="dots rotate">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps">
+            <div class="container">
+                <div class="heading text-center">
+                    <p class="wow fadeInUp"><span class="purple"><i class="fas fa-paw"></i> </span><span
+                            class="orange"><i class="fas fa-paw"></i> </span><span class="purple">
+                            <i class="fas fa-paw"></i> </span></p>
+                    <h2 class="wow fadeInDown">We Love to <span class="wow pulse" data-wow-delay="1s"> Serve
+                            You</span></h2>
+                </div>
+                <div class="service">
+                    <div class="cards">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card orange">
+                                    <div class="icon">
+                                        <div class="svg-icon" id="svg-1"
+                                             data-svg-icon="{% static 'website/images/home_5/svg/pet_health.svg' %}"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Healthy Pets</h5>
+                                        <p>
+                                             Good, healthy food, regular exercise, and grooming are all part of bringing a dog into your home. Make good choices from the start and you will avoid many common problems
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card yellow">
+                                    <div class="icon">
+                                        <div class="svg-icon" id="svg-2"
+                                             data-svg-icon="{% static 'website/images/home_5/svg/pet_food.svg' %}">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Healthy Food</h5>
+                                        <p>
+                                            Arguably the most important aspect of your dog's well-being is health. ... It's also important that you bring healthy habits into your dog's daily life
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card purple">
+                                    <div class="icon">
+                                        <div class="svg-icon" id="svg-3"
+                                             data-svg-icon="{% static 'website/images/home_5/svg/pet_training.svg' %}">
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Happy owners</h5>
+                                        <p>
+                                            Studies have shown that even small interactions with pets cause the human brain to produce oxytocin, a hormone often referred to as the “cuddle chemical.” Oxytocin increases feelings of relaxation, trust, and empathy while reducing stress
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </section>
+
+        {% include './partials/footer.html' %}
+
+    </div>
+
+{% endblock %}

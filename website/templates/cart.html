@@ -1,0 +1,158 @@
+{% extends "main.html" %}
+
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+{% endblock %}
+
+{% block inline_code %}
+    <script type="text/javascript">
+        var user = '{{request.user}}'
+
+        function getToken(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+
+        var csrftoken = getToken('csrftoken');
+
+        function getCookie(name) {
+            // Split cookie string and get all individual name=value pairs in an array
+            var cookieArr = document.cookie.split(";");
+
+            // Loop through the array elements
+            for (var i = 0; i < cookieArr.length; i++) {
+                var cookiePair = cookieArr[i].split("=");
+
+                /* Removing whitespace at the beginning of the cookie name
+                and compare it with the given string */
+                if (name == cookiePair[0].trim()) {
+                    // Decode the cookie value and return
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+
+            // Return null if not found
+            return null;
+        }
+
+        var cart = JSON.parse(getCookie('cart'))
+        console.log('Cart:', cart)
+
+
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="main-wrapper pet cart">
+
+        <div id="preloading"></div>
+
+        <section class="featured">
+
+            {% include './partials/header.html' %}
+
+            {% block subheader %}
+                <div class="crumb center">
+                    <div class="container">
+                        <h1>
+                            Cheer Chews <span class="wow pulse" data-wow-delay="1s"> Cart </span>
+                        </h1>
+                        <div class="bg_tran">
+                            Cheer Chews Cart
+                        </div>
+                        <p>
+                            <a href="/" title="Home">HOME</a> || <span> CART </span>
+                        </p>
+                    </div>
+                </div>
+            {% endblock %}
+
+        </section>
+
+        <section class="entry">
+            <div class="container">
+                <div class="card mb-5">
+                    <table class="table">
+                        <thead class="thead">
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Change quantity</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in items %}
+                            <tr>
+                                <td>{{ item.product.name }}</td>
+                                <td>${{ item.product.price|floatformat:2 }}</td>
+                                <td scope="row">{{ item.quantity }}</td>
+                                <td>
+                                    <div class="quantity">
+                                        <img data-product="{{ item.product.id }}" data-action="add"
+                                             class="chg-quantity update-cart" src="{% static  'images/arrow-up.png' %}"
+                                             width="10" height="10">
+                                        <img data-product="{{ item.product.id }}" data-action="remove"
+                                             class="chg-quantity update-cart"
+                                             src="{% static  'images/arrow-down.png' %}"
+                                             width="10" height="10">
+                                    </div>
+                                </td>
+                                <td class="orange">${{ item.get_total|floatformat:2 }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="coupan">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form">
+
+                                <ul class="mt-4 mb-30">
+                                    <li>Subtotal <span>${{ order.get_cart_total|floatformat:2 }}</span></li>
+                                    <li>Shipping Charge <span>$ 00.00</span></li>
+                                    <li>Total <span>${{ order.get_cart_total|floatformat:2 }}</span></li>
+                                </ul>
+                                <a href="checkout.html" class="btn main">Proceed To Checkout</a>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="continue">
+                                <a href="shop.html" title="Countinue Shopping" class="btn orange">Countinue Shopping <i
+                                        class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include './partials/footer.html' %}
+
+    </div>
+
+{% endblock %}
+
+{% block footer_scripts %}
+    <script src="{% static 'js/cart.js' %}"></script>
+{% endblock %}

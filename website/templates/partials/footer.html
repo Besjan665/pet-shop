@@ -1,0 +1,82 @@
+{% load static %}
+
+<section class="new_foot">
+    <div class="container">
+        <div class="logo text-center">
+            <img src="{% static 'images/logo.png' %}" alt="image of logo" title="logo"
+                 class="img-fluid">
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="intro">
+                    <p class="head">
+                        Contact Info
+                    </p>
+                    <ul>
+                        <li class="location">
+                            Lezhe,Albania
+                        </li>
+                        <li class="number">
+                            <a href="tel:00355696082228">0696082228</a>
+                        </li>
+                        <li class="gmail">
+                            <a href="mailto:albafish@yahoo.com">albafish@yahoo.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-12">
+                <div class="letter text-center">
+                    
+                    <div class="links">
+                        <a href="#" class="btn" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="btn" title="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn" title="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn" title="youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="quick">
+                    <p class="head">
+                        Quick Links
+                    </p>
+                    <ul>
+                        <li><a href="/" title="Home"><i class="fas fa-paw yellow mr-2"></i>Home</a></li>
+                        <li><a href="/about.html" title=" About Us"><i class="fas fa-paw yellow mr-2"></i>About Us</a></li>
+                        <li><a href="/shop.html" title="Our Services"><i class="fas fa-paw yellow mr-2"></i>Our Shop</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Copyright 2021.<a href="#" class="name orange" title=""> Team 4 Uni Tirana(FE)
+            </a> All
+                Rights Reserved &reg;</p>
+        </div>
+        <div class="cat wow fadeIn">
+            <img src="{% static 'images/pet5.png' %}" alt="image of pets" title="pets">
+        </div>
+        <div class="dog wow fadeIn">
+            <img src="{% static 'images/pet6.png' %}" alt="image of pets" title="pets">
+        </div>
+    </div>
+</section>
+
+<div class="pet">
+    <a id="back2Top" title="Back to top" href="#" class="hvr-radial-in"><i class="fas fa-paw"></i></a>
+</div>
+
+
+<div class="search-popup">
+    <button class="close-search style-two"><img src="{% static 'website/images/home_5/cross-out.png' %}" alt="">
+    </button>
+    <button class="close-search"><img src="{% static 'website/images/home_5/cross-out.png' %}" alt=""></button>
+    <form method="post" action="blog.html">
+        <div class="form-group">
+            <input type="search" name="search-field" value="" placeholder="Search Here" required>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </form>
+</div>
